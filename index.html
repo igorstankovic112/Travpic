@@ -16,7 +16,7 @@ https://templatemo.com/tm-518-sentra
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link rel="stylesheet" href="css/mainCss.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -25,7 +25,7 @@ https://templatemo.com/tm-518-sentra
         <link rel="stylesheet" href="css/templatemo-style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
+        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
@@ -139,51 +139,132 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </section>
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1>About<br><em>The Author</em></h1>
+                    <p>I you want to know more about me 
+                    <br>Here is my portfolio.</p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <a href="https://igorstankovic112.github.io/" target="blank"><img src="img/portfolio.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="contact" class="content-section">
                 <div id="contact-content">
                     <div class="section-heading">
                         <h1>Contact<br><em>Travpic</em></h1>
-                        <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
-                        <br>Phasellus luctus odio eget dui imperdiet.</p>
+                        <p>Want to know in more deatil about our travels or have a consultation? 
+                        <br>Contact us right here</p>
                         
                     </div>
                     <div class="section-content">
                         <form id="contact" action="#" method="post">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                   <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                    <span id="nameErorr" class="greskaForm hide">You didn't fill out your name!</span>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your first and last name">
                                   </fieldset>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                   <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                    <span id="mailErorr" class="greskaForm hide">You didn't fill out your email!</span>
+                                    <input name="email" type="email" class="form-control pozicija" id="email" placeholder="Your email...">
                                   </fieldset>
                                 </div>
-                                 <div class="col-md-4">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                      <h4>
+                                            Have you traveled before?
+                                      </h4>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <span id="radioError" class="greskaRadio hide">Pick one option</span><br>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                      <label for="firstRadio">Yes</label>
+                                      <input name="radio" type="radio" class="form-control" id="firstRadio">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                      <label for="secondRadio">No</label>
+                                      <input name="radio" type="radio" class="form-control" id="secondRadio">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                      <h4>
+                                        What do you have questions about?
+                                      </h4>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <span id="tbError" class="greskaTb hide">Pick at least one option</span><br>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
+                                    <fieldset>
+                                      <label for="cb1">Destinations</label>
+                                      <input name="check" type="checkbox" class="form-control" id="cb1">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
+                                    <fieldset>
+                                      <label for="cb2">Pictures</label>
+                                      <input name="check" type="checkbox" class="form-control" id="cb2">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
+                                    <fieldset>
+                                      <label for="cb3">Colabs</label>
+                                      <input name="check" type="checkbox" class="form-control" id="cb3">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
+                                    <fieldset>
+                                      <label for="cb4">Other</label>
+                                      <input name="check" type="checkbox" class="form-control" id="cb4">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
                                   <fieldset>
-                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                    <span id="textError" class="greskaForm hide">This field can not be empty!</span>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." ></textarea>
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                    
+                                        <button type="button" id="form-submit" class="btn">Send Message Now</button>
+                                    
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
-                                  <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
-                                  </fieldset>
-                                </div>
+                                    <fieldset>
+                                        <br>
+                                        <span id="sentForm" class="sentFormText hide">We recieved your message!</span>
+                                    </fieldset>
+                                  </div>
                             </div>
                         </form>
+                        
                     </div>
-                </div>
+                </div>    
             </section>
             <section class="footer">
-                <p>Copyright &copy; 2019 Company Name 
-                
-                . Design: TemplateMo</p>
+                <p>
+                    Copyright &copy; 2022 Igor Stanković - Travpic
+                </p>
             </section>
         </div>
 

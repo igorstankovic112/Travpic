@@ -1,0 +1,27 @@
+.greskaForm{
+    color:red;
+    font-size: 14px;
+    float:left;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.hide{
+    visibility: hidden;
+    padding-left: 30px;
+   
+}
+.greskaRadio{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+.sentFormText{
+    color: blue;
+    font-size: 20px;
+}
+.greskaTb{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}

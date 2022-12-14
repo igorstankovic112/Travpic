@@ -8,7 +8,7 @@ for(let i = 0; i < navText.length; i++){
     navIspis += `<li><a href="${navLinks[i]}"><span class="rect"></span>
     <span class="circle"></span>${navText[i]}</a></li>`
 }
-navIspis += "</ul>";
+navIspis += `</ul>`;
 navMeni.innerHTML = navIspis;
 
 //ikonice
@@ -71,13 +71,14 @@ featuredPlaces.innerHTML = featuredIspis;
 //tabovi
 //prva petlja ispisuje razlicite divove a druga petlja sa ifom u odnosu na to koji je div ispisuje odredjene slike i tekst
 let divTagovi = ["tab1","tab2","tab3","tab4"]
-let imgTagovi = ["img/Alaska.jpg","img/CinqueTerre.jpg","img/toscana.jpg"];
+let imgTagovi = ["img/Budapest.jpg","img/milano.jpg","img/edinburgh.jpg"];
 let imgTagovi1 = ["img/prague.jpg","img/paris.jpg","img/BuachailleEtiveMòr.jpg"];
-let imgTagovi2 = ["img/featured_2.jpg","img/featured_1.jpg","img/featured_3.jpg"];
-let imgTagovi3 = ["img/featured_3.jpg","img/featured_1.jpg","img/featured_3.jpg"];
-let tabText = ["<h4>Alaska</h4><span>25 July 2019</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Cinque Terre National Park</h4><span>25 June 2019</span><p>Cinque Terre National Park, locally known as Parco Nazionale delle Cinque Terre, is located along the coast of northern Italy in the province of La Spezia.It is the smallest national park in Italy </p>","<h4>Tuscany</h4><span>5 May 2019</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>"]
-let tabText1 =["<h4>Prague</h4><span>20 October 2020</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Paris</h4><span>18 August 2020</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Buachaille Etive Mòr</h4><span>6 June 2020</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>"]
-let tabText2 =["<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>","<h4>Integer ultrices augue</h4><span>25 July 2018</span><p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>"]
+let imgTagovi2 = ["img/Alaska.jpg","img/CinqueTerre.jpg","img/toscana.jpg"];
+let imgTagovi3 = ["img/Vienna.jpg","img/rome.jpg","img/belgrade.jpg"];
+let tabText = ["<h4>Budapest</h4><span>14 May 2019</span><p>Once called the “Queen of the Danube,” Budapest has long been the focal point of the nation and a lively cultural centre. The city straddles the Danube River in the magnificent natural setting where the hills of western Hungary meet the plains stretching to the east and south.</p>","<h4>Milano</h4><span>12 July 2019</span><p>One of the world's fashion capitals, Milan is often overlooked by tourists who flock to Rome, Florence, and Venice. But this gem of a city has a lot to offer, including the iconic Duomo di Milano, the world's largest—and perhaps most stunning—Gothic cathedral.</p>","<h4>Edinburgh</h4><span>9 November 2019</span><p>Scotland’s capital city, Edinburgh is renowned for its heritage, culture, and festivals. Take a long walk around the center to explore the World Heritage Sites of the Old Town and New Town, as well as all the area’s museums and galleries</p>"]
+let tabText1 =["<h4>Prague</h4><span>20 October 2020</span><p>The City of Hundred Spires has so much to offer to all visitors in terms of architecture and culture, that travelers from all around the world often plan their Europe itineraries around the visit to Prague. Prague has many nicknames, but the most common nickname is the Heart of Europe because of its location in the center of the continent or The City of Hundred Spires.</p>","<h4>Paris</h4><span>18 August 2020</span><p>Some of the most memorable things to do in Paris include visiting the Eiffel Tower, the Arc de Triomphe and Notre-Dame Cathedral. During the evening, experiencing one of the legendary Moulin Rouge cabaret shows, strolling through some of the most picturesque neighborhoods, like Montmartre, or climbing the Montparnasse Tower are a must.It is always a good time to visit Paris.</p>","<h4>Buachaille Etive Mòr</h4><span>6 June 2020</span><p>Buachaille Etive Mòr is one of the best known and loved of all the Munro peaks. The epic view of the mountain from the main A82 road makes it appear quite unassailable and is one of the most photographed sights in Scotland.</p>"]
+let tabText2 = ["<h4>Alaska</h4><span>25 July 2021</span><p>If you're a fan of gorgeous landscapes, massive mountains, wildlife, or anything involving nature, Alaska is a great place to visit. The biggest state in the US, Alaska is home to 17 of the country's 20 tallest mountains.</p>","<h4>Cinque Terre National Park</h4><span>12 May 2021</span><p>Cinque Terre National Park, locally known as Parco Nazionale delle Cinque Terre, is located along the coast of northern Italy in the province of La Spezia.It is the smallest national park in Italy </p>","<h4>Tuscany</h4><span>4 July 2021</span><p>The glorious region of Tuscany is a picture-postcard destination in northwest Italy. It’s easy to see why great artists and visionaries such as Da Vinci, Michelangelo, and Galileo made Tuscany the birthplace of the Renaissance. Several towns and cities are designated UNESCO World Heritage Sites and superb photo opportunities are available at every corner.</p>"]
+let tabText3 = ["<h4>Vienna</h4><span>15 April 2022</span><p>This really is a beautiful city full of urban charm, with a rich and long history, plenty to see and do, excellent services and amenities, and a selection of cakes that will do evil things to your willpower.</p>","<h4>Rome</h4><span>30 November 2022</span><p>Rome is a beautiful place! One of the most beautiful cities in Italy and one of the most impressive cities in the world! I often refer to it as the city-museum because it really feels as if you are walking through a huge museum. Every street every church every building breaths history. There s so much to see in do in Rome and it's a city like no other. a place everyone should visit, at least once in their lifetime. </p>","<h4>Belgrade</h4><span>1 December 2022</span><p>The capital of Serbia, also its largest city, is an inexhaustible source of entertainment and leisure. Belgrade is a lively city, widely known for its nightlife and the numerous attractions that make it one of the most visited in the country. One weekend will be just enough for you to see the most prominent places and get to know its spirit./p>"]
 let tabs = document.querySelector("#first-tab-group");
 let taboviIspis= "";
 for(let i = 0 ; i < divTagovi.length;i++){
@@ -124,7 +125,7 @@ for(let i = 0 ; i < divTagovi.length;i++){
             <div class="item">
                 <img src="${imgTagovi3[j]}" alt="">
                 <div class="text-content">
-                    ${tabText[j]}
+                    ${tabText3[j]}
                     <div class="accent-button button">
                         <a href="#contact">Continue Reading</a>
                     </div>
@@ -136,188 +137,91 @@ for(let i = 0 ; i < divTagovi.length;i++){
 }
 tabs.innerHTML = taboviIspis;
 
+let regexName = /^[A-ZČĆŠĐŽ][a-zčćšđž]{2,15}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,15})?(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,20})\s*$/;
 
-{/*                             <div id="tab1">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_1.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Integer ultrices augue</h4>
-                                                    <span>25 July 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_2.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Cras commodo odio ut</h4>
-                                                    <span>16 July 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_3.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Sed at massa turpis</h4>
-                                                    <span>10 July 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab2">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_3.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Sed at massa turpis</h4>
-                                                    <span>30 June 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_1.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Lorem ipsum dolor sit</h4>
-                                                    <span>24 June 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_2.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Cras commodo odio ut</h4>
-                                                    <span>12 June 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab3">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_2.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Cras commodo odio ut</h4>
-                                                    <span>26 May 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_1.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Lorem ipsum dolor sit</h4>
-                                                    <span>22 May 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_3.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Integer ultrices augue</h4>
-                                                    <span>8 May 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab4">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_1.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Lorem ipsum dolor sit</h4>
-                                                    <span>26 April 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>                                
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_3.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Integer ultrices augue eu</h4>
-                                                    <span>24 April 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/blog_2.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Cras commodo odio ut</h4>
-                                                    <span>20 April 2018</span>
-                                                    <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div> */}
+let textName = document.getElementById('name');
+fieldName = document.getElementById('nameErorr');
+textName.addEventListener('blur', checkName);
+function checkName() {
+    let name = textName.value;
+    name.replace(/\s\s+/g, ' ');
+    if (!regexName.test(name)) {
+        fieldName = document.getElementById('nameErorr');
+        if (name == "" || !name.trim()) {
+            fieldName.innerHTML = "You didn't fill out your name!";
+        }
+        else {
+            fieldName.innerHTML = "You've entered name in the wrong format! (example: Michael Scott)";
+        }
+        fieldName.classList.remove('hide');
+        return false;
+    }
+    if (regexName.test(name)) {
+        let fieldName = document.getElementById('nameErorr');
+        fieldName.classList.add('hide');
+        return true;
+    }
+}
+
+let regexMail = /^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/;
+
+let textEmail = document.getElementById('email');
+textEmail.addEventListener('blur', checkEmail);
+function checkEmail() {
+    let email = textEmail.value;
+    if (!regexMail.test(email)) {
+        let fieldEmail = document.getElementById('mailErorr');
+        if (email == "" || !email.trim())
+            fieldEmail.innerHTML = "You didn't fill out your email!";
+        else
+            fieldEmail.innerHTML = "Email is in wrong format! (example: michael@gmail.com)";
+
+        fieldEmail.classList.remove('hide');
+        return false;
+    }
+    if (regexMail.test(email)) {
+        let fieldEmail = document.getElementById('mailErorr');
+        fieldEmail.classList.add('hide');
+        return true;
+    }
+}
+
+let form = document.getElementById("form-submit");
+form.addEventListener("click", function(){
+    let text = document.getElementById("message").value;
+    let ime = checkName();
+    let mail = checkEmail();
+    let r1 = document.getElementById("firstRadio");
+    let r2 = document.getElementById("secondRadio");
+    let cb1 = document.getElementById("cb1");
+    let cb2 = document.getElementById("cb2");
+    let cb3 = document.getElementById("cb3");
+    let cb4 = document.getElementById("cb4");
+    
+    if(r1.checked || r2.checked){
+        document.getElementById("radioError").classList.add("hide");
+    }
+    else{
+        document.getElementById("radioError").classList.remove("hide");
+    }
+    if (text == "") {
+        document.getElementById("textError").classList.remove("hide");
+        document.getElementById("sentForm").classList.add("hide");
+    }
+    if (text != "") {
+        document.getElementById("textError").classList.add("hide");
+
+    }
+    if(cb1.checked || cb2.checked || cb3.checked || cb4.checked){
+        document.getElementById("tbError").classList.add("hide");
+    }
+    else{
+        document.getElementById("tbError").classList.remove("hide");
+    }
+    if (text != "" && checkEmail() && checkName() && (r1.checked || r2.checked) && (cb1.checked || cb2.checked || cb3.checked || cb4.checked)) {
+        document.getElementById("sentForm").classList.remove("hide");
+    }
+    else {
+        document.getElementById("sentForm").classList.add("hide");
+    }
+});
