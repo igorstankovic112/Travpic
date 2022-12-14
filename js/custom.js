@@ -1,7 +1,7 @@
 //navigacioni meni
 
-let navText = ["Home", "Featured", "Recent Work", "Blog Entries","Contact Us"];
-let navLinks = ["#top", "#featured", "#projects", "#blog","#contact"];
+let navText = ["Home", "Featured", "Recent Work", "Blog Entries","Author","Contact Us"];
+let navLinks = ["#top", "#featured", "#projects", "#blog","#author","#contact"];
 let navMeni = document.querySelector(".navList");
 let navIspis = "<ul>";
 for(let i = 0; i < navText.length; i++){
@@ -136,7 +136,7 @@ for(let i = 0 ; i < divTagovi.length;i++){
     taboviIspis += "</ul></div>"
 }
 tabs.innerHTML = taboviIspis;
-
+//forma
 let regexName = /^[A-ZČĆŠĐŽ][a-zčćšđž]{2,15}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,15})?(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,20})\s*$/;
 
 let textName = document.getElementById('name');
@@ -225,3 +225,16 @@ form.addEventListener("click", function(){
         document.getElementById("sentForm").classList.add("hide");
     }
 });
+
+let portfolio = document.getElementsByClassName("portfolio");
+console.log(portfolio)
+for (let i = 0; i < portfolio.length; i++) {
+    portfolio[i].addEventListener("mouseover", () => {
+        portfolio[i].classList.add("effect");
+    });
+}
+for (let i = 0; i < portfolio.length; i++) {
+    portfolio[i].addEventListener("mouseout", () => {
+        portfolio[i].classList.remove("effect");
+    });
+}
