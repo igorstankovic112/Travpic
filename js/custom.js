@@ -13,8 +13,8 @@ navMeni.innerHTML = navIspis;
 
 //ikonice
 
-let ikonice = [" fa-facebook"," fa-twitter"," fa-linkedin"," fa-rss"," fa-behance"];
-let linkoviIkonica = ["https://www.facebook.com/","https://www.twitter.com/","https://www.linkedin.com/","#","#"];
+let ikonice = [" fa-facebook"," fa-twitter"," fa-linkedin"," fa-rss"];
+let linkoviIkonica = ["https://www.facebook.com/","https://www.twitter.com/","https://www.linkedin.com/","sitemap.xml"];
 let ikoniceRed = document.querySelector(".social-icons");
 let ikoniceIspis = "";
 for(let i = 0 ; i < ikonice.length;i++){
@@ -220,6 +220,7 @@ form.addEventListener("click", function(){
     }
     if (text != "" && checkEmail() && checkName() && (r1.checked || r2.checked) && (cb1.checked || cb2.checked || cb3.checked || cb4.checked)) {
         document.getElementById("sentForm").classList.remove("hide");
+        document.getElementById("contact").reset();
     }
     else {
         document.getElementById("sentForm").classList.add("hide");
